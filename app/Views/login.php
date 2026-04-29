@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SysInfo — Connexion</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="<?= base_url('Design/style.css') ?>" />
 </head>
 <body>
 
@@ -52,7 +52,7 @@
       <a href="#">Mot de passe oublié ?</a>
     </div>
 
-    <a href="dashboard.html" class="btn btn-primary btn-full">
+    <a href="<?= base_url('Design/dashboard.html') ?>" class="btn btn-primary btn-full">
       <svg viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
       Se connecter
     </a>
