@@ -2,19 +2,19 @@
 
 namespace App\Controllers;
 
+use App\Models\EleveModel;
+
 class DashboardController extends BaseController
 {
     public function index(): string
     {
         helper('url');
 
-        $html = file_get_contents(ROOTPATH . 'app/Views/dashboard.html');
+        $eleves = (new EleveModel())
+            ->select('eleve.id, eleve.nom, classe.nom AS classe')
+            ->join('classe', 'classe.id = eleve.id_classe')
+            ->findAll();
 
-        $replacements = [
-            'href="style.css"' => 'href="' . base_url('css/style.css') . '"',
-            'href="login.html"' => 'href="' . base_url('/') . '"',
-        ];
-
-        return str_replace(array_keys($replacements), array_values($replacements), $html);
+        return view('dashboard', ['eleves' => $eleves]);
     }
 }

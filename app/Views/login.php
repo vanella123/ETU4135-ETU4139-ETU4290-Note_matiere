@@ -61,7 +61,7 @@
     </form>
 
     <div class="login-footer">
-      Pas encore de compte ? <a href="#">Contactez votre administrateur</a>
+      Pas encore de compte ? <a href="<?= base_url('register') ?>">Créer un compte</a>
     </div>
   </div>
 </div>
