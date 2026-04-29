@@ -2,3 +2,8 @@
       - Route : / aller vers login.html
       - Controller : LoginController.php
       - View : login.html
+ - Champ de formulaire de index : email et mot de passe  : 
+      - LoginController :  Reçoit les données envoyées par JS, les vérifie et répond en format JSON.
+      - Le script JS (intégré ou externe) : Intercepte le clic sur "Se connecter", 
+      envoie les données au serveur et traite la réponse.
+      - Le Modèle (UserModel.php) : Pour vérifier les identifiants dans la base de données.
