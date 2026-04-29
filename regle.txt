@@ -1,0 +1,4 @@
+si une eleve n ' a pas assister a un maytiere  ses notes pour cette matiere est 0 
+ref s4 iany no mis option le eleve du coup ref mijery ny notes s4 le eleve dia le notes s4 iany no mis options 
+mis modifier note le izy ou en peut modifier les notes 
+
