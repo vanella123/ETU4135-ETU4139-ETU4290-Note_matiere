@@ -1,0 +1,4 @@
+- Controller login pour rediriger l'index vers le view login.html
+      - Route : / aller vers login.html
+      - Controller : LoginController.php
+      - View : login.html
