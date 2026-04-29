@@ -9,6 +9,9 @@ CREATE TABLE utilisateur (
     email VARCHAR(100) NOT NULL UNIQUE
 );
 
+INSERT INTO utilisateur (nom, mdp, email) VALUES
+('Admin Sys', 'password', 'admin@sysinfo.mg');
+
 CREATE TABLE prof (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(100) NOT NULL
