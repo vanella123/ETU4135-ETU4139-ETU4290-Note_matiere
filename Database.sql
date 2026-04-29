@@ -5,7 +5,8 @@ USE gestion_bulletin;
 CREATE TABLE utilisateur (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(100) NOT NULL,
-    mdp VARCHAR(100) NOT NULL
+    mdp VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE
 );
 
 CREATE TABLE prof (
